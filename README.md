@@ -14,7 +14,7 @@ $ docker network create red_tomcat
 
 A continuación vamos a crear un contenedor a partir de la imagen [`tomcat`](https://hub.docker.com/_/tomcat). En la documentación podemos ver que el directorio `/usr/local/tomcat/webapps/` es donde tenemos que poner el fichero de despliegue `war` (vamos a usar **bind mount** para montar el fichero war en el directorio). No vamos a mapear puerto porque no vamos a acceder a este contenedor desde el exterior.
 
-Tenemos un directorio donde tenemos el fichero war (puedes encontrar estos ficheros en el [repositorio github](https://github.com/maximofernandezriera/tomcat-nginx/ejemplo4)):
+Tenemos un directorio donde tenemos el fichero war (puedes encontrar estos ficheros en el [repositorio github](https://github.com/maximofernandezriera/tomcat-nginx/)):
 
 ```bash
 $ cd tomcat
@@ -71,7 +71,7 @@ Y al acceder la ip de nuestro host:
 
 En esta parte del proyecto vamos a desplegar con Docker Compose la aplicación Java con Tomcat y nginx como proxy inverso que vimos en la parte A.
 
-Puedes encontrar el fichero `docker-compose.yaml` en en este [directorio](https://github.com/maximofernandezriera/tomcat-nginx/ejemplo4) del repositorio. 
+Puedes encontrar el fichero `docker-compose.yaml` en en este [directorio](https://github.com/maximofernandezriera/tomcat-nginx/) del repositorio. 
 
 El fichero `docker-compose.yaml` sería:
 
@@ -110,3 +110,11 @@ $ docker compose ps
 ```
 
 Y acceder al puerto 80 de nuestra IP para ver la aplicación.
+
+# Entrega
+
+- Capturas descriptivas.
+
+# Fecha de entrega
+
+- Viernes 14 de noviembre.
